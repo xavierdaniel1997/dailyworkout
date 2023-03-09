@@ -10,7 +10,7 @@ export const useLogin = () => {
         setIsLoading(true)
         setError(null)
 
-        const resposne = await fetch('/api/user/login', {
+        const resposne = await fetch('https://api-dailyworkout.onrender.com/api/user/login', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, password})
