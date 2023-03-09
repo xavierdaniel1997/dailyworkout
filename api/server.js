@@ -14,7 +14,7 @@ app.use(express.json())
 //routes
 
 app.use("/api/workouts", workoutRoutes)
-app.use("/api/user", userRoutes)
+app.use("/api/user", userRoutes)      
 
 
 app.get('/', (req, res) => {
